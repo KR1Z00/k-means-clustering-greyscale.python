@@ -170,11 +170,11 @@ def test(file: str):
     plt.show()
 
     # Convert the image...
-    new_image = clustering.convert(200)
+    clustered_image, cluster_values = clustering.convert(200)
 
     # Display the converted image
     print("Showing converted image...")
-    plt.imshow(new_image, cmap='gray', vmin=0, vmax=255)
+    plt.imshow(clustered_image, cmap='gray', vmin=0, vmax=255)
     plt.show()
 
 # Author: Jamie Walker, 29/07/2019
